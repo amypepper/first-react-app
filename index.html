@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      function App(props.children) {
+        console.log(props.children);
+        return <div>{props.children}</div>;
+      }
+      ReactDOM.render(
+        <App>
+          <header>
+            <h1>{props.children.children}</h1>
+            <img
+              width="150"
+              alt="a picture of Sally Student in a yellow sweater and jeans"
+              src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+            />
+            <address>
+              <a target="_blank" href="mailto:sallystudent@nowhere.com">
+                sallystudent@nowhere.com
+              </a>
+              <p>(555) 234-5678</p>
+            </address>
+          </header>
+          <main>
+            <section>
+              <h2>Education</h2>
+
+              <h3 className="school-title">
+                University of Washington (2007 - 2011)
+              </h3>
+              <p>Bachelor of Arts in English</p>
+              <ul>
+                <li>Completed thesis on Chaucer's use of humor</li>
+                <li>Graduated Magna Cum Laude</li>
+                <li>
+                  Tutored elementary school students in writing after school
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Employment History</h2>
+
+              <h3 className="company-title">Amazon (2013 - Present)</h3>
+              <p>Web Development Intern</p>
+              <ul>
+                <li>Helped develop aspects of Amazon Fresh's user interface</li>
+                <li>Contributed to UX improvements</li>
+              </ul>
+
+              <h3 className="company-title">
+                Ezell's Famous Chicken (2011 - 2013)
+              </h3>
+              <p>Cashier</p>
+              <ul>
+                <li>
+                  Took orders accurately and gave excellent customer service
+                </li>
+                <li>Worked on promotional displays in the store</li>
+              </ul>
+            </section>
+          </main>
+        </App>,
+        document.querySelector("#application-root")
+      );
+    </script>
+
+    <!--       
+    <main>
+      <section>
+        <h2>Education</h2>
+
+        <h3>University of Washington (2007 - 2011)</h3>
+        <p>Bachelor of Arts in English</p>
+        <ul>
+          <li>Completed thesis on Chaucer's use of humor</li>
+          <li>Graduated Magna Cum Laude</li>
+          <li>Tutored elementary school students in writing after school</li>
+        </ul>
+        <br />
+      </section>
+      <section>
+        <h2>Employment History</h2>
+        <h3>Amazon (2013 - Present)</h3>
+        <p>Web Development Intern</p>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer
+            enim neque volutpat ac.
+          </li>
+          <li>
+            Nulla facilisi morbi tempus iaculis. Amet dictum sit amet justo. At
+            urna condimentum mattis pellentesque id.
+          </li>
+          <li>Ornare arcu odio ut sem nulla pharetra diam sit.</li>
+        </ul>
+        <br />
+        <h3>Ezell's Famous Chicken (2011 - 2013)</h3>
+        <p>Cashier</p>
+        <ul>
+          <li>Lorem ipsum.</li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer
+            enim neque volutpat ac.
+          </li>
+          <li>Ultrices in iaculis nunc sed.</li>
+        </ul>
+      </section>
+    </main> -->
+  </body>
+</html>
